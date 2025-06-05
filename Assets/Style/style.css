@@ -1,0 +1,133 @@
+body {
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #ffffff;
+}
+
+/* Imagen de fondo estatica para toda la pagina */
+body {
+  background-image: url('https://wallpapers.com/images/hd/south-park-background-syeg3cczg9y4yyt6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar .navbar-collapse {
+  background: linear-gradient(45deg, #ff7b0000, #00000000);
+  max-width: 5000px;
+  width: 200%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  border-radius: 50px;
+}
+
+.navbar {
+  background: linear-gradient(45deg, #ff8000, #000000);
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.navbar .form-control {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.navbar .form-control::placeholder {
+  color: #ffffff;
+}
+
+/* 1) Input de la busqueda personalizada */
+#txtBuscar {
+  background-color: #000000d8;
+  color: #ffffff;
+  border: 3px solid #0066ff1c;
+  border-radius: 16px;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+}
+
+/* Al hacer click en el input de busqueda, se cambia el borde */
+#txtBuscar:focus {
+  outline: none;
+  border-color: #00d1b2;
+  box-shadow: 0 0 5px rgba(0, 209, 178, 0.5);
+}
+
+/* Boton de busqueda con degradado */
+#btnBuscar {
+  background: linear-gradient(45deg, #ad6826, #cf3232);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+#btnBuscar:hover {
+  opacity: 0.4;
+}
+
+/* Ajustar el botón “Mostrar todos” */
+#btnMostrarTodos {
+  background: linear-gradient(45deg, #26ad5a, #3358bd);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+#btnMostrarTodos:hover {
+  background-color: #e0a800;
+}
+
+#personajes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 1rem;
+}
+
+/* Ajustes para las tarjetas */
+.personaje-card {
+  background: rgba(0, 10, 44, 0.671);
+  border: 1px solid #ffffff;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 8px 10px rgb(0, 0, 0);
+  transition: transform 0.2s;
+}
+
+.personaje-card:hover {
+  transform: translateY(-8px);
+}
+
+.personaje-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.personaje-card .info {
+  padding: 0.3rem;
+}
+
+.personaje-card .info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.personaje-card .info p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+#personajes>p {
+  text-align: center;
+  color: #ffffff;
+  font-style: italic;
+}
